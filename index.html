@@ -5,9 +5,21 @@
     <title>Happy birthday to you</title>
     <link rel="stylesheet" type="text/css" href="css/resert.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+    <script src="jq.snow.js"></script>
+    <!--下面是调用方法和参数说明-->
     <script>
-        alert("编者建议使用电脑浏览效果更加");
+        $(function(){
+            $.fn.snow({
+                minSize: 5,		//雪花的最小尺寸
+                maxSize: 40, 	//雪花的最大尺寸
+                newOn: 200		//雪花出现的频率 这个数值越小雪花越多
+            });
+        });
+
     </script>
+    <script>alert("编者建议使用电脑浏览效果更加");</script>
 </head>
 <body>
 <div class="main-wrapper">
@@ -17,7 +29,7 @@
             <div class="inner">
                 <h1>叶妈,生日快乐!</h1>
                 <p class="sub-heading">有一种光荣的职业，叫老师<br>有一种难忘的情结，爱老师<br>有一种最美的祝愿，送老师</p>
-                <button id="button" style="border-radius: 40px" onmouseover="change1()" onmouseleave="change2()"><a href="https://pan.baidu.com/s/1fo1v2DYrp1sXiw_l03pzag" style="text-decoration: none">播放</a></button>
+                <button id="button" style="border-radius: 40px" onmouseover="change1()" onmouseleave="change2()"><a href="vedio/1.mp4" style="text-decoration: none">播放</a></button>
             </div>
         </div>
     </header>
